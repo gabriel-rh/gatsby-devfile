@@ -7,8 +7,8 @@ projects:
       type: git
       location: 'https://github.com/gabriel-rh/gatsby-devfile/'
 components:
-  - name: gatsby
-    type: dockerimage
+  - type: dockerimage
+    alias: gatsby
     image: quay.io/devfile/universal-developer-image:ubi8-latest
     mountSources: true
     memoryLimit: 2000Mi
