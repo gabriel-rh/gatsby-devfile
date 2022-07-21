@@ -1,4 +1,6 @@
 apiVersion: 1.0.0
+metadata:
+  generateName: gatsby-
 projects:
   - name: jgatsby-test
     source:
