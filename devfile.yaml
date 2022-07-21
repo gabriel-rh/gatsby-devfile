@@ -20,15 +20,7 @@ commands:
   - id: setup-gatsby-cli
     exec:
       commandLine: "npm install -g gatsby-cli && npm install"
-      component: gatsby
-  - id: deploy
-    composite:
-      commands:
-        - setup-gatsby-cli
-        - gatsby-develop
-      group:
-        kind: deploy
-        isDefault: true      
+      component: gatsby   
 events:
   postStart:
     - setup-gatsby-cli
