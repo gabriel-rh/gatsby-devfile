@@ -14,4 +14,4 @@ components:
     memoryLimit: 2000Mi
     endpoints:
       - name: web
-        targetPort: 8000
+        port: 8000
