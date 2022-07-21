@@ -1,4 +1,9 @@
 apiVersion: 1.0.0
+projects:
+  - name: jgatsby-test
+    source:
+      type: git
+      location: 'https://github.com/gabriel-rh/gatsby-devfile/'
 components:
   - name: gatsby
     container:
