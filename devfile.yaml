@@ -6,10 +6,10 @@ projects:
       location: 'https://github.com/gabriel-rh/gatsby-devfile/'
 components:
   - name: gatsby
-    container:
-      image: quay.io/devfile/universal-developer-image:ubi8-latest
-      mountSources: true
-      memoryLimit: 2000Mi
-      endpoints:
-        - name: web
-          targetPort: 8000
+    type: dockerimage
+    image: quay.io/devfile/universal-developer-image:ubi8-latest
+    mountSources: true
+    memoryLimit: 2000Mi
+    endpoints:
+      - name: web
+        targetPort: 8000
